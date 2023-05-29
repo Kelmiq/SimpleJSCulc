@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <title>jsCalc</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1 class="my_logo"><a href="#">kelmiCode</a></h1>
+  <div class="main_container">
+  <h1 class="java_word"><span class="simple_word">Simple</span> Java<span class="script_word">Script </span><span class="calculator_word">Calculator</span></h1>
+  <input type="number" id="first_input" class="first_input" placeholder="Введите первое число">
+  <br>
+  <input type="number" id="second_input" class="second_input" placeholder="Введите второе число">
+  <br>
+  <div class="operators">
+  <select id="operator" class="operator_choose">
+  <option id="plus" value="plus" class="plus_button">Plus</option>
+  <option id="minus" value="minus" class="minus_button">Minus</option>
+  <option id="multiply" value="multiply" class="multiply_button">Multiply</option>
+  <option id="divide" value="divide" class="divide_button">Divide</option>
+  </select>
+  </div>
+  <br>
+  <button onclick="calculator()" class="result_button">Получить результат</button>
+  <br>
+  <div class="result_container">
+  <p id="result" class="result"></p>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

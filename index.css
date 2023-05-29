@@ -1,0 +1,170 @@
+body {
+  background-color: #4a4a4a;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.java_word {
+  animation: java_word 3s linear forwards;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 200;
+  color: black;
+}
+
+.script_word {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: #f7df1e;
+}
+
+.simple_word, .calculator_word {
+  color: #141414;
+  font-weight: 100;
+}
+
+.first_input, .second_input {
+  animation: inputs 5s linear forwards;
+  background-color: #616161;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.first_input::placeholder, .second_input::placeholder{
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+}
+
+.second_input {
+  margin-top: 20px;
+}
+
+.my_logo {
+  animation: my_logo 2s linear forwards;
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.my_logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main_container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.result_button {
+  animation: result_button 9s linear forwards;
+  background-color: #616161;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.result_container {
+  animation: result_container 10s linear forwards;
+  margin-top: 120px;
+  font-size: 50px;
+  color: #000;
+}
+
+.operators {
+  animation: operators 7s linear forwards;
+  margin-top: 20px;
+}
+
+.plus_button, .minus_button, .multiply_button, .divide_button {
+  background-color: #616161;
+  border-radius: 20px;
+  width: 70px;
+}
+
+.operator_choose {
+  background-color: #616161;
+  border-radius: 20px;
+  text-align: center;
+}
+
+@keyframes my_logo {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes java_word {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes inputs {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes operators {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes result_container {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes result_button {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .my_logo {
+    font-size: 65px;
+  }
+
+  .java_word {
+    font-size: 50px;
+  }
+
+  .first_input, .second_input {
+    width: 400px;
+  }
+
+  .operator_choose {
+    width: 120px;
+  }
+
+  .result_button {
+    width: 180px;
+    height: 40px;
+  }
+}
